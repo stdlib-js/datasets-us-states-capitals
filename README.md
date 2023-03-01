@@ -24,14 +24,31 @@ limitations under the License.
 
 > A list of US state capitals.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/datasets-us-states-capitals
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import capitals from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-us-states-capitals@deno/mod.js';
+var capitals = require( '@stdlib/datasets-us-states-capitals' );
 ```
 
 #### capitals()
@@ -109,9 +126,9 @@ var data = capitals();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import floor from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-floor@deno/mod.js';
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import capitals from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-us-states-capitals@deno/mod.js';
+var floor = require( '@stdlib/math-base-special-floor' );
+var randu = require( '@stdlib/random-base-randu' );
+var capitals = require( '@stdlib/datasets-us-states-capitals' );
 
 var data = capitals();
 var len = data.length;
@@ -129,7 +146,62 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- /.examples -->
 
+* * *
 
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use as a general utility, install the CLI package globally
+
+```bash
+npm install -g @stdlib/datasets-us-states-capitals-cli
+```
+
+</section>
+
+<!-- CLI usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: us-states-capitals [options]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ us-states-capitals
+Montgomery
+Juneau
+Phoenix
+...
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 <!-- <license> -->
 
@@ -147,10 +219,10 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/datasets/us-states-abbr`][@stdlib/datasets/us-states-abbr]</span><span class="delimiter">: </span><span class="description">A list of US state two-letter abbreviations in alphabetical order according to state name.</span>
--   <span class="package-name">[`@stdlib/datasets/us-states-capitals-names`][@stdlib/datasets/us-states-capitals-names]</span><span class="delimiter">: </span><span class="description">US state capitals and names.</span>
--   <span class="package-name">[`@stdlib/datasets/us-states-names`][@stdlib/datasets/us-states-names]</span><span class="delimiter">: </span><span class="description">A list of US state names in alphabetical order.</span>
--   <span class="package-name">[`@stdlib/datasets/us-states-names-capitals`][@stdlib/datasets/us-states-names-capitals]</span><span class="delimiter">: </span><span class="description">US state names and capitals.</span>
+-   <span class="package-name">[`@stdlib/datasets-us-states-abbr`][@stdlib/datasets/us-states-abbr]</span><span class="delimiter">: </span><span class="description">A list of US state two-letter abbreviations in alphabetical order according to state name.</span>
+-   <span class="package-name">[`@stdlib/datasets-us-states-capitals-names`][@stdlib/datasets/us-states-capitals-names]</span><span class="delimiter">: </span><span class="description">US state capitals and names.</span>
+-   <span class="package-name">[`@stdlib/datasets-us-states-names`][@stdlib/datasets/us-states-names]</span><span class="delimiter">: </span><span class="description">A list of US state names in alphabetical order.</span>
+-   <span class="package-name">[`@stdlib/datasets-us-states-names-capitals`][@stdlib/datasets/us-states-names-capitals]</span><span class="delimiter">: </span><span class="description">US state names and capitals.</span>
 
 </section>
 
@@ -165,7 +237,7 @@ The data files (databases) are licensed under an [Open Data Commons Public Domai
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -210,6 +282,10 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
+[cli-section]: https://github.com/stdlib-js/datasets-us-states-capitals#cli
+[cli-url]: https://github.com/stdlib-js/datasets-us-states-capitals/tree/cli
+[@stdlib/datasets-us-states-capitals]: https://github.com/stdlib-js/datasets-us-states-capitals/tree/main
+
 [umd]: https://github.com/umdjs/umd
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
@@ -226,13 +302,13 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/datasets/us-states-abbr]: https://github.com/stdlib-js/datasets-us-states-abbr/tree/deno
+[@stdlib/datasets/us-states-abbr]: https://github.com/stdlib-js/datasets-us-states-abbr
 
-[@stdlib/datasets/us-states-capitals-names]: https://github.com/stdlib-js/datasets-us-states-capitals-names/tree/deno
+[@stdlib/datasets/us-states-capitals-names]: https://github.com/stdlib-js/datasets-us-states-capitals-names
 
-[@stdlib/datasets/us-states-names]: https://github.com/stdlib-js/datasets-us-states-names/tree/deno
+[@stdlib/datasets/us-states-names]: https://github.com/stdlib-js/datasets-us-states-names
 
-[@stdlib/datasets/us-states-names-capitals]: https://github.com/stdlib-js/datasets-us-states-names-capitals/tree/deno
+[@stdlib/datasets/us-states-names-capitals]: https://github.com/stdlib-js/datasets-us-states-names-capitals
 
 <!-- </related-links> -->
 
