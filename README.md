@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import capitals from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-us-states-capitals@esm/index.mjs';
+import capitals from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-us-states-capitals@v0.1.0-esm/index.mjs';
 ```
 
 #### capitals()
@@ -127,7 +127,7 @@ var data = capitals();
 
 import floor from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-floor@esm/index.mjs';
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import capitals from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-us-states-capitals@esm/index.mjs';
+import capitals from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-us-states-capitals@v0.1.0-esm/index.mjs';
 
 var data = capitals();
 var len = data.length;
