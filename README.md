@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import capitals from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-us-states-capitals@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/datasets-us-states-capitals/tags). For example,
+
+```javascript
 import capitals from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-us-states-capitals@v0.1.0-esm/index.mjs';
 ```
 
@@ -127,7 +132,7 @@ var data = capitals();
 
 import floor from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-floor@esm/index.mjs';
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import capitals from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-us-states-capitals@v0.1.0-esm/index.mjs';
+import capitals from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-us-states-capitals@esm/index.mjs';
 
 var data = capitals();
 var len = data.length;
